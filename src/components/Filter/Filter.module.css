@@ -1,0 +1,10 @@
+.input {
+  margin-left: 10px;
+}
+.input:focus {
+  border: 1px solid var(--main-blue);
+  outline: 0;
+}
+.label {
+  margin-left: 10px;
+}
