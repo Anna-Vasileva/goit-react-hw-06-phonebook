@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import types from "./contactTypes";
 import { createReducer } from "@reduxjs/toolkit";
-import { changeFilter, deleteContact, addContact } from "./contactActions";
+// import { changeFilter, deleteContact, addContact } from "./contactActions";
 
 const items = createReducer([], {
   [types.ADD_CONTACT]: (state, action) =>

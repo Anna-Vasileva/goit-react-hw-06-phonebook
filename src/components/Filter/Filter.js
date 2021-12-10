@@ -1,8 +1,12 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import s from "./Filter.module.css";
 import PropTypes from "prop-types";
-
-const Filter = ({ filter, changeFilter }) => {
+import changeFilter from "../../redux/contactActions";
+//{ filter, changeFilter }
+const Filter = () => {
+  const dispatch = useDispatch();
+  // const filter = useSelector(()=>changeFilter());
   return (
     <label className={s.label}>
       Find contacts by name
