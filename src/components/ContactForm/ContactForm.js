@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
-import addContact from "../../redux/contactActions";
+import { addContact } from "../../redux/contactActions";
 import s from "./ContactForm.module.css";
 // import PropTypes from "prop-types";
 //{ onSubmit }

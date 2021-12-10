@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import s from "./Filter.module.css";
 // import PropTypes from "prop-types";
-import changeFilter from "../../redux/contactActions";
+import { changeFilter } from "../../redux/contactActions";
 import { getFilter } from "../../redux/contactSelector";
 //{ filter, changeFilter }
 const Filter = () => {
