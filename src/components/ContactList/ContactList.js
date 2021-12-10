@@ -1,7 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
 import s from "./ContactList.module.css";
 import ContactListItem from "../ContactListItem";
 import PropTypes from "prop-types";
+import contactActions from "../../redux/contactActions";
 
 const ContactList = ({ contacts, onDelete }) => {
   return (
@@ -31,5 +33,12 @@ ContactList.propTypes = {
   ),
   onDelete: PropTypes.func.isRequired,
 };
+// const mapStateToProps = (state) => {
+//   return {
+//     contacts: { name, number, id },
+//     // onDelete,
+//   };
+// };
 
+// export default connect(mapStateToProps)(ContactList);
 export default ContactList;
