@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import s from "./ContactList.module.css";
 import ContactListItem from "../ContactListItem";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { deleteContact } from "../../redux/contactActions";
 import { getVisibleContact } from "../../redux/contactSelector";
 //{ contacts, onDelete }
@@ -26,6 +26,16 @@ const ContactList = () => {
       })}
     </ul>
   );
+};
+ContactList.propTypes = {
+  visibleContacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    })
+  ),
+  onDelete: PropTypes.func.isRequired,
 };
 // ContactList.propTypes = {
 //   contacts: PropTypes.arrayOf(
